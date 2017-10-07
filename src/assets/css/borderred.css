@@ -48,7 +48,12 @@ header > section {
 
 footer > section > section {
     /* structure */
-    min-height: 12vmax;
+    /* min-height: 12vmax; */
+}
+
+footer {
+    /* structure */
+    height: 15vmax;
 }
 
 header > section > section,
@@ -179,6 +184,10 @@ END : GENERAL : FONTS
 START : GENERAL : APPEARANCE 
 */
 
+footer {
+    /* appearance */
+    background-color: orange
+}
 
 header > section,
 main > section,
@@ -283,6 +292,11 @@ END : GALLERY : APPEARANCE
     header {
         /* structure */
         height: 8vmin;
+    }
+
+    footer {
+        /* structure */
+        height: 15vmin;
     }
 
     footer > section > section {
