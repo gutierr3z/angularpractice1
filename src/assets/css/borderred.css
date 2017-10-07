@@ -1,0 +1,358 @@
+/*
+BORDER RED BOILERPLATE
+
+============================================================
+START : GENERAL : STRUCTURE
+*/
+
+html {
+    /* structure */
+    height: 100%;
+}
+
+body {
+    /* structure */
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+}
+
+header {
+    /* structure */
+    height: 8vmax;
+}
+
+header * {
+    /* structure */
+    height: inherit;
+}
+
+main {
+    /* structure */
+    flex: 1;
+}
+
+header > section,
+main > section,
+footer > section {
+    /* structure */
+    padding: 0px 3vmax;
+}
+
+header > section {
+    /* structure */
+    padding-right: 0px;
+}
+
+footer > section > section {
+    /* structure */
+    min-height: 12vmax;
+}
+
+header > section > section,
+main > section > section, 
+footer > section > section {
+    /* structure */
+    max-width: 992px;
+    min-width: 250px;
+    margin: 0px auto;
+}
+
+header > section > section > div > a {
+    /* structure */
+    display: block;
+    width: 15vmax;
+    min-width: 150px;
+    max-width: 300px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    /* structure */
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0px;
+}
+
+h1 {
+    /* structure */
+    margin-top: calc( 1.6rem + .3vmax );
+    margin-bottom: calc( 1rem + .3vmax );
+}
+
+h2 {
+    /* structure */
+    margin-top: calc( 1.4rem + .3vmax );
+    margin-bottom: calc( .8rem + .3vmax );
+}
+
+h3 {
+    /* structure */
+    margin-top: calc( 1.2rem + .3vmax );
+    margin-bottom: calc( .6rem + .3vmax );
+}
+
+h4 {
+    /* structure */
+    margin-top: calc( 1rem + .3vmax );
+    margin-bottom: calc( .4rem + .3vmax );
+}
+
+h5 {
+    /* structure */
+    margin-top: calc( .8rem + .3vmax );
+    margin-bottom: calc( .2rem + .3vmax );
+}
+
+h6 {
+    /* structure */
+    margin-top: calc( .6rem + .3vmax );
+    margin-bottom: calc( .28rem + .3vmax );
+}
+
+/*
+END : GENERAL : STRUCTURE
+============================================================
+============================================================
+START : GENERAL : FONTS 
+*/
+
+html {
+    /* fonts */
+    font-size: 14px;
+}
+
+body {
+    /* fonts */
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: inherit;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    /* fonts */
+    letter-spacing: -.03rem;
+}
+
+h1 {
+    /* fonts */
+    font-size: calc( 2rem + .3vmax );
+    line-height: calc( 2rem + 1.5vmax );
+}
+
+h2 {
+    /* fonts */
+    font-size: calc( 1.8rem + .3vmax );
+    line-height: calc( 1.8rem + 1.5vmax );
+}
+
+h3 {
+    /* fonts */
+    font-size: calc( 1.6rem + .3vmax );
+    line-height: calc( 1.6rem + 1.5vmax );
+}
+
+h4 {
+    /* fonts */
+    font-size: calc( 1.4rem + .3vmax );
+    line-height: calc( 1.4rem + 1.5vmax );
+}
+
+h5 {
+    /* fonts */
+    font-size: calc( 1.2rem + .3vmax );
+    line-height: calc( 1.2rem + 1.5vmax );
+}
+
+h6 {
+    /* fonts */
+    font-size: calc( 1rem + .3vmax );
+    line-height: calc( 1rem + 1.5vmax );
+}
+
+
+/*
+END : GENERAL : FONTS
+============================================================
+============================================================
+START : GENERAL : APPEARANCE 
+*/
+
+
+header > section,
+main > section,
+footer > section {
+    /* appearance */
+    background-color: #ead9d9;
+    border: 1px solid red;
+}
+
+header > section,
+footer > section {
+    /* appearance */
+    background-color: #e4c9c9;
+}
+
+header > section > section,
+main > section > section, 
+footer > section > section {
+    /* appearance */
+    background-color: #dbb7b7;
+    border: 1px solid red;
+}
+
+header > section > section > div > a {
+    /* appearance */
+    border: 1px solid red;
+    /* background: url( '../images/logo.svg' ); */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+}
+
+/*
+END : GENERAL : APPEARANCE
+============================================================
+============================================================
+START : GALLERY : STRUCTURE 
+*/
+
+.br-gallery {
+    /* structure */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.br-gallery:after {
+    /* structure */
+    content: '';
+    flex: 0 0 33%;
+}
+
+.br-gallery > * {
+    /* structure */
+    flex: 0 0 33%;
+    margin-bottom: .5vmax;
+}
+
+.br-gallery > * > * {
+    /* structure */
+    display: block;
+    position: relative;
+    padding-bottom: 80%;
+}
+
+.br-gallery > * > * > * {
+    /* structure */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/*
+END : GALLERY : STRUCTURE
+============================================================
+============================================================
+START : GALLERY : APPEARANCE 
+*/
+
+.br-gallery > * {
+    /* appearance */
+    background-color: #da8686;
+}
+
+.br-gallery > * > * {
+    /* appearance */
+    background-color: #d89494;
+}
+
+.br-gallery > * > * > * {
+    /* appearance */
+    background-color: #d6a3a3;
+}
+
+/*
+END : GALLERY : APPEARANCE
+============================================================
+*/
+
+@media ( min-width: 768px ) {
+
+    header {
+        /* structure */
+        height: 8vmin;
+    }
+
+    footer > section > section {
+        /* structure */
+        min-height: 12 vmin;
+    }
+
+    header > section,
+    main > section,
+    footer > section {
+        /* structure */
+        padding: 0px 3vmin;
+    }
+
+    header > section > section > div > a {
+        /* structure */
+        width: 25vmin;
+    }
+
+    h1 {
+        /* structure */
+        margin-top: calc( 1.6rem + .3vmin );
+        margin-bottom: calc( 1rem + .3vmin );
+        /* fonts */
+        font-size: calc( 2rem + .3vmin );
+        line-height: calc( 2rem + 1.5vmin );
+    }
+
+    h2 {
+        /* structure */
+        margin-top: calc( 1.4rem + .3vmin );
+        margin-bottom: calc( .8rem + .3vmin );
+        /* fonts */
+        font-size: calc( 1.8rem + .3vmin );
+        line-height: calc( 1.8rem + 1.5vmin );
+    }
+
+    h3 {
+        /* structure */
+        margin-top: calc( 1.2rem + .3vmin );
+        margin-bottom: calc( .6rem + .3vmin );
+        /* fonts */
+        font-size: calc( 1.6rem + .3vmin );
+        line-height: calc( 1.6rem + 1.5vmin );
+    }
+
+    h4 {
+        /* structure */
+        margin-top: calc( 1rem + .3vmin );
+        margin-bottom: calc( .4rem + .3vmin );
+        /* fonts */
+        font-size: calc( 1.4rem + .3vmin );
+        line-height: calc( 1.4rem + 1.5vmin );
+    }
+
+    h5 {
+        /* structure */
+        margin-top: calc( .8rem + .3vmin );
+        margin-bottom: calc( .2rem + .3vmin );
+        /* fonts */
+        font-size: calc( 1.2rem + .3vmin );
+        line-height: calc( 1.2rem + 1.5vmin );
+    }
+
+    h6 {
+        /* structure */
+        margin-top: calc( .6rem + .3vmin );
+        margin-bottom: calc( .28rem + .3vmin );
+        /* fonts */
+        font-size: calc( 1rem + .3vmin );
+        line-height: calc( 1rem + 1.5vmin );
+    }
+}

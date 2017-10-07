@@ -1,0 +1,19 @@
+.red {
+    border: 1px solid red;
+}
+
+.blue {
+    border: 1px solid blue;
+}
+
+.yellow {
+    border: 1px solid yellow;
+}
+
+.black {
+    border: 1px solid black;
+}
+
+body {
+    background-color: yellow;
+}
