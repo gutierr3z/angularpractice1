@@ -46,11 +46,6 @@ header > section {
     padding-right: 0px;
 }
 
-footer > section > section {
-    /* structure */
-    /* min-height: 12vmax; */
-}
-
 footer {
     /* structure */
     height: 15vmax;
