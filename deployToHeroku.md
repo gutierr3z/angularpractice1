@@ -27,7 +27,6 @@ In the root of your Angular app folder, create `server.js` file and add the foll
 
     console.log('Console listening!');
 
-
 ## Install Express.js
 
 Run `npm install express --save`
