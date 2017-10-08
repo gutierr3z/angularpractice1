@@ -31,7 +31,6 @@ In the root of your Angular app folder, create `server.js` file and add the foll
 
 Run `npm install express --save`
 
-
 ## Change settings in package.json
 
 Move ` "@angular/cli": "1.3.1"` `"typescript": "~2.3.3"` and ` "@angular/compiler-cli": "^4.2.4"` from `"devDependencies"` to `"dependencies"`
